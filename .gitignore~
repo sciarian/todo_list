@@ -1,0 +1,12 @@
+#Files / Dirs to be ignored by git hub
+
+#Byte compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+#PyCharm files
+/idea/
+
+#Instance folder
+/instance
