@@ -11,7 +11,11 @@
    </head>
    <body>
 	   <h1>
-		  What will we do today
+		  TodoList
            </h1>
+
+	   {% for item in todo_list %}
+	   	<p>{{ item.thing_todo }}</p>
+	   {% endfor %}
    </body>
 </html>
