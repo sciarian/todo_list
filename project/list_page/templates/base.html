@@ -13,9 +13,8 @@
 	   <h1>
 		  TodoList
            </h1>
-
-	   {% for item in todo_list %}
-	   	<p>{{ item.thing_todo }}</p>
-	   {% endfor %}
+	   <!--Child Template-->
+	   {% block content %}
+	   {% endblock %}
    </body>
 </html>

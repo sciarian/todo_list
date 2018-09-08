@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+   {% block content %}
+      <div></div>
+      <div></div>
+      <h2>Add seomthing to your todo list...</h2>
+      
+      <!--This line indicates that it is to go to the todolist blue print and 
+          use the add_todo_item method (the name of the varible for the todolist
+	  blueprint in the views.py file is todo_list_blueprint) This part was a little
+          confusing to me since I hardly ever refer to the blueprint by its name parameter
+          I usually just refer to the name of the variable that stores the blueprint object
+      -->
+      <form action = "{{ url_for('todolist.add_todo_item') }}" method="post">
+	      {{ form.csrf_token }}
+	      {{ form.todo_item(Placeholder="(>o_o)> ...")}}
+	      <button type="submit">SUBMIT</button>
+   {% endblock %}

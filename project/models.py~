@@ -10,3 +10,4 @@ class Thing_todo(db.Model):
 
     def __repr__(self):
         return '<title {}'.format(self.name)
+

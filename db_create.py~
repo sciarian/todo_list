@@ -1,6 +1,6 @@
 #Imports
 from project import db
-from project.models import Things_todo
+from project.models import Thing_todo
 
 #Create database
 db.create_all()

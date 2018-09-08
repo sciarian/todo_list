@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+   {% block content %}
+
+	{% for item in todo_list %}
+		<p>{{ item.thing_todo }}</p>
+	{% endfor %}
+
+   {% endblock %}
